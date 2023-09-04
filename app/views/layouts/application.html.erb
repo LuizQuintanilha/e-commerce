@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LuhhPersonalize</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+     <%= link_to 'Entrar', new_admin_session_path %>
+    </header>
+    <h1>Luhh Personalize</h1>
+    <h2>Produtos Personalizados</h2>
+    <%= yield %>
+  </body>
+</html>

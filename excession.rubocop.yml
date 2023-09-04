@@ -1,0 +1,5 @@
+require: rubocop-rails
+
+Rails/FindBy:
+  Exclude:
+    - test/test_helper
