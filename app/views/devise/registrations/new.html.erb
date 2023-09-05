@@ -4,12 +4,27 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, placeholder: 'Digite seu nome' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, placeholder: 'Digite seu sobrenome' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf, placeholder: 'Digite seu cpf' %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, placeholder: 'Digite um email válido' %>
   </div>
 
   <div class="field">
-    <%= f.label :password, 'Senha' %>
+    <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
@@ -17,7 +32,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation, 'Confirmação de senha' %><br />
+    <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, placeholder: 'Confirme sua senha' %>
   </div>
 

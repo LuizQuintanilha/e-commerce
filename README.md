@@ -15,3 +15,4 @@ Projeto criado com:
 ruby 3.0.0p0
 Rails 7.0.7.2
 Rubocop 1.52.0
+I18n 

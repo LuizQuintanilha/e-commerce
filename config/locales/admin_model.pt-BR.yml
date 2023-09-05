@@ -1,0 +1,30 @@
+pt-BR:
+  activerecord:
+    attributes:
+      admin:
+        cpf: 'CPF'
+        last_name: 'Sobrenome'
+        first_name: 'Nome'
+        email: 'Email'
+        password: 'Senha'
+        password_confirmation: 'Confirmação de Senha'
+    errors:
+      models:
+        admin:
+          attributes:
+            email:
+              blank: 'não pode ficar em branco'
+            password:
+              too_short: 'muito curta'
+              blank: 'não pode ficar em branco'
+            first_name:
+              blank: 'não pode ficar em branco'
+            last_name:
+              blank: 'não pode ficar em branco'
+            cpf:
+              blank: 'não pode ficar em branco'
+              taken: 'deve ser único'
+            password_confirmation:
+              blank: 'não pode ficar em branco'
+              confirmation: 'não confere'
+              too_short: 'muito curta'

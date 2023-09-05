@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'Administrador visita homepage' do
-  it 'e vê informações da página' do
+describe 'A partir da homepage' do
+  it 'admin vê informações da página' do
     visit root_path
 
     expect(current_path).to eq root_path
@@ -30,7 +30,7 @@ describe 'Administrador visita homepage' do
     expect(page).to have_content 'Cadastrar Conta'
     expect(page).to have_field 'Email'
     expect(page).to have_field 'Senha'
-    expect(page).to have_field 'Confirmação de senha'
+    expect(page).to have_field 'Confirmação de Senha'
     expect(page).to have_button 'Criar'
   end
 end

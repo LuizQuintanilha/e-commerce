@@ -1,0 +1,15 @@
+AllCops:
+  Excludes:
+    - spec
+  Metrics/LineLength:
+    Max: 95
+  MethodLength:
+  Max: 35
+
+  Metrics/AbcSize:
+    Enabled: false
+
+  BlockLength:
+    Max: 70
+  Metrics/BlockLength:
+    max: 50
