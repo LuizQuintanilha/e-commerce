@@ -1,18 +1,32 @@
-Projeto E-commerce
+<h1>E-commerce</h1>
 
-Administrador deverá ser capaz de cadastrar produtos
-Produtos devem possuir:
-1 - Nome 
-2 - Categoria
-3 - Código de identificação único
-4 - Preço varejo
-5 - Preço atacado
-6 - Disponibilidade do produto
-7 - Imagem
+> Status do Projeto: ⚠️ Projeto em Andamento
+## Sobre o Projeto
+<p>
 
+Este projeto se trata de uma aplicação  web com Ruby on Rails que servirá para conectar os usuários a produtos cadastrados no site.
 
-Projeto criado com:
-ruby 3.0.0p0
-Rails 7.0.7.2
-Rubocop 1.52.0
-I18n 
+## Configurações
+### Pré-requisitos
+⚠️ [Ruby](https://github.com/ruby/ruby) </br>
+⚠️ [Ruby On Rails](https://github.com/rails/rails)
+### Principais Gems
+⚠️ [Devise](https://github.com/heartcombo/devise) </br>
+⚠️ [Faraday](https://github.com/lostisland/faraday) </br>
+⚠️ [Bootstrap](https://github.com/twbs/bootstrap-rubygem) </br>
+⚠️ [Capybara](https://github.com/teamcapybara/capybara) </br>
+⚠️ [Rspec](https://github.com/rspec/rspec-rails) </br>
+
+### Como baixar o projeto
+ No terminal, faça um clone do projeto com o código abaixo:
+ ```
+ git@github.com:LuizQuintanilha/auction-app.git
+  ```
+### Como rodar a aplicação
+No terminal, entre na pasta do projeto e digite:
+```
+bin/setup
+```
+Logo após:
+```
+rails db:seed
