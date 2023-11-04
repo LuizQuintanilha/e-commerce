@@ -12,13 +12,17 @@
 
   <body>
     <header>
-      <%= link_to 'LuhhPersonalize', root_path %> | 
+    <div class="tittle">
+      <h1>Luhh Personalize</h1>
+    </div>
+  
+    <div class="login-link">
       <% if admin_signed_in? %>
         <%= button_to 'Encerrar Sessão', destroy_admin_session_path, method: :delete %>
-      <% else %>
-        <%= link_to 'Administrador', new_admin_session_path %> |
-        <%= link_to 'Usuário' %>
+      <% elsif %>
+        <%= link_to 'Administrador', new_admin_session_path %>
       <% end %>
+    </div>
     </header>
     <%= notice %>
     <%= yield %>
