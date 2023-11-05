@@ -1,3 +1,13 @@
-<h1>Luhh Personalize</h1>
-<h2>Produtos Personalizados</h2>
+<div class="subtittle">
+  <h2>Produtos Personalizados</h2>
+</div>
 
+<% @products.each do |product| %>
+  <div class="card">
+    <strong>Código</strong>: <%= product.code %><br>
+    <strong>Nome</strong>: <%= product.name %><br>
+    <strong>Descrição</strong>: <%= product.description %><br>
+    <br>
+  </div>
+  
+<% end %>

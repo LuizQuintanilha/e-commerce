@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(180, 141, 216);
+}
+
+.tittle {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.subtittle {
+  text-align: center;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  color: ghostwhite
+}
+
+.login-link {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100; 
+  margin-right: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
