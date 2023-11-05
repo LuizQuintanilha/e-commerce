@@ -1,0 +1,22 @@
+<h2>Cadastrar novo produto</h2>
+
+<div >
+  <% if @product.errors.any? %>
+    <% @product.errors.full_messages.each.each do |msg| %>
+      <div >
+        <%= msg %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<div class="card-login" >
+<%= form_with(model: @product) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.submit 'Salvar' %>
+<% end %>
+</div>
